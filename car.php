@@ -85,6 +85,19 @@ require('classes/bid.class.php');
 			<!-- =========================== -->
 			<!-- PART 1 BID FORM PLACEHOLDER -->
 			<!-- =========================== -->
+
+			<form action="process-bid.php" method="post">
+
+				 <input type ="hidden" name = "car_id" value="<?php echo ($_GET['id']) ?>"/>
+
+				<p>Name : <input type="text" name = "name" /> </p>
+				<p>Value : <input type="text" name = "value" /> </p>
+
+
+				<input type="submit" value="BID"/>
+
+
+			</form>
 			
 			
 		</div><!-- /car bid form -->
